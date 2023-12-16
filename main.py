@@ -7,6 +7,8 @@ from math import sqrt, acos, atan2
 # Inspired by: 
 # https://github.com/Andrisky/Editing-images-with-hand-gestures/blob/main/main.py
 
+dir_path = 'images'
+
 # Variables and lists
 hand_features = False
 
@@ -80,7 +82,6 @@ V_max = 255
 
 if __name__ == '__main__':
 
-    dir_path = 'test images'
     # Change the current working directory to the path containing the test images
     os.chdir(dir_path)
     image_names = os.listdir(os.getcwd())
